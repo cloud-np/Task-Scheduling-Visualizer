@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    display: block;
+    font-family: 'Montserrat';
+}
+
+h3 {
+    color: rgb(224, 117, 30);
+}
+
+p {
+}
+
+.showNode {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: black; */
+    /* display: flex; */
+    text-align: center;
+    /* padding: 100px; */
+}
+
+.showNode span {
+    font-weight: 400;
+    color: black;
+}
+
+.showNode__machine{
+    color: rgba(171, 35, 250, 0.925);
+}
