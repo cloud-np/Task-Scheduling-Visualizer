@@ -71,7 +71,6 @@ const findColor = (taskName, workflowType) => {
     let color = null;
     let nameSeparated = taskName.split('_');
     nameSeparated.forEach(name => {
-
         // This line checks if the name variable exists in your object
         if (name in colours[`${workflowType}`]) 
             color = colours[`${workflowType}`][`${name}`];
