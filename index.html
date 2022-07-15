@@ -7,14 +7,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="showNode">
-        <h3>Name <span id="task-name"></span> </h3>
-        <h3>Rank <span id="task-rank"></span> </h3>
-        <h3>Start <span id="task-start"></span> </h3>
-        <h3>End <span id="task-end"></span> </h3>
-        <h3 class="showNode__machine">Machine ID <span id="task-machine-id"></span> </h3>
+    <header>
+        <div class="navBar">
+            <ul class="navBar__nav">
+                <li>Home</li>
+                <li>Upload</li>
+                <li> </li>
+                <li> </li>
+            </ul>
+        </div>
+    </header>
+    <div class="mainCont">
+        <div class="showNode">
+            <h3>Name <span id="task-name"></span> </h3>
+            <h3>Rank <span id="task-rank"></span> </h3>
+            <h3>Start <span id="task-start"></span> </h3>
+            <h3>End <span id="task-end"></span> </h3>
+            <h3 class="showNode__machine">Machine ID <span id="task-machine-id"></span> </h3>
+        </div>
+        <div id="myDiagramDiv" style="width: 50rem; height: 50rem"></div>
     </div>
-    <div id="myDiagramDiv" style="border: solid 1px blue; width:1800px; height:1250px"></div>
 </body>
-<script defer src="app.js"></script>
+<script type="module" defer src="app.js"></script>
 </html>

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "gojs": "^2.2.12",
+    "parcel": "^2.6.2"
+  }
+}

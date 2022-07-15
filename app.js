@@ -51,24 +51,26 @@ let diagram = $(go.Diagram, "myDiagramDiv", {
 });
 
 let layout = diagram.layout;
-layout.layerSpacing = 200;
+layout.layerSpacing = 100;
 layout.columnSpacing = 2;
 layout.direction = 90;
 layout.packOption = 7;
 
 function showClickedNode(e, obj) {
-  console.log(obj.part, e);
+  console.log(obj.part);
+  // console.log(e);
+  
 
   // Update the id
-  document.getElementById("task-name").innerHTML = obj.part.lb.name;
+  document.getElementById("task-name").innerHTML = obj.part.qb.name;
   // Update the rank
-  document.getElementById("task-rank").innerHTML = obj.part.lb.rank;
+  document.getElementById("task-rank").innerHTML = obj.part.qb.rank;
   // Update the start
-  document.getElementById("task-start").innerHTML = obj.part.lb.start;
+  document.getElementById("task-start").innerHTML = obj.part.qb.start;
   // Update the end
-  document.getElementById("task-end").innerHTML = obj.part.lb.end;
+  document.getElementById("task-end").innerHTML = obj.part.qb.end;
   // Update the end
-  document.getElementById("task-machine-id").innerHTML = obj.part.lb.machine_id;
+  document.getElementById("task-machine-id").innerHTML = obj.part.qb.machine_id;
 }
 
 let nodeSchemaBasic = $(
