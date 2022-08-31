@@ -1,6 +1,7 @@
-// import workflowFile from "./data/epigenomics-workflow.js";
-// import workflowFile from "./data/cycles_50.js";
+// import workflowFile from "./data/cycles_50";
 import workflowFile from "./data/epigenomics_workflow.js";
+// import workflowFile from "./data/seismology_50.js";
+
 import go from "gojs";
 import colorTasks from "./colours";
 
@@ -16,6 +17,7 @@ const getIDFromName = (str) => {
 };
 
 let workflowType = workflowFile.name.split("-")[0].toLowerCase();
+document.getElementById("title").innerText = workflowType;
 let tasks = [];
 let edges = [];
 
